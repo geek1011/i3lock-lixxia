@@ -1,0 +1,6 @@
+i3lock-lixxia (2.11.1-2+git20190422) unstable; urgency=medium
+
+  * Forked from my i3lock packaging (based on the official debian one)
+  * Switched to lixxia's fork, commit a27257f (based on original upstream ae72b67 2.11.1)
+
+ -- Patrick Gaskin <patrick@pgaskin.net>  Mon, 22 Apr 2019 10:15:07 -0500

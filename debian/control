@@ -1,0 +1,48 @@
+Source: i3lock-lixxia
+Section: utils
+Priority: optional
+Maintainer: Patrick Gaskin <patrick@pgaskin.net>
+Build-Depends: debhelper (>= 11),
+               pkg-config,
+               libpam0g-dev,
+               libcairo2-dev,
+               libxcb1-dev,
+               libxcb-dpms0-dev,
+               libxcb-image0-dev,
+               libxcb-util0-dev,
+               libev-dev,
+               libxcb-xinerama0-dev,
+               libxkbcommon-dev (>= 0.5.0),
+               libxkbcommon-x11-dev (>= 0.5.0),
+               libxcb-xkb-dev,
+               libxcb-composite0-dev,
+               libxcb-randr0-dev,
+               libxcb-xrm-dev,
+Standards-Version: 4.1.4
+Homepage: https://i3wm.org/i3lock/
+Vcs-Git: https://github.com/geek1011/i3lock-lixxia.git
+Vcs-Browser: https://github.com/geek1011/i3lock-lixxia
+
+Package: i3lock-lixxia
+Architecture: any
+Section: x11
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: i3lock
+Conflicts: i3lock
+Provides: i3lock
+Description: improved screen locker
+ i3lock is a simple screen locker like slock. After starting it, you will
+ see a white screen (you can configure the color/an image). You can return
+ to your screen by entering your password.
+ .
+ This package is based on lixxia's fork which includes a clock and color
+ customization.
+ .
+ i3lock forks so you can combine it with an alias to suspend to RAM.
+ .
+ You can specify either a background color or a PNG image which will be
+ displayed while your screen is locked.
+ .
+ You can specify whether i3lock should bell upon a wrong password.
+ .
+ i3lock uses PAM and therefore is compatible with LDAP etc.
